@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sample1</title>
+    <title>My First Web3 Application</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -31,6 +31,19 @@
         <li>HTML5 Boilerplate</li>
       </ul>
     </div>
+
+    <div>
+      <span>provider url: <input type="text" id="provider_url" value="http://localhost:8545"></span><br/>
+      <span> <button id="btnconnect" onclick="doconnect()">connect</button></span><br>
+      <span> Connection Status : <label id="connectionstatus" >Not Connected </label></span><br>
+      <span> Versioninfo: <label id="versioninfo"></label> </span><br>
+      <span>Get Accounts <button id="getAccounts" onclick="getAccounts()">getAccounts</button>  </span><br>
+      <span>Get Accounts <button id="getDefaultAccountBalance" onclick="getDefaultAccountBalance()">Get Balance</button>  </span>
+      <span> Balance <label id="bal_in_wei"></label> Wei <br>
+             Balance <label id "bal_in_eth"></label> eth </span> <br>
+
+
+    </div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -44,6 +57,9 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="/bower_components/bignumber.js/bignumber.js"></script>
+    <script src="/bower_components/crypto-js/index.js"></script>
+    <script src="/bower_components/web3/dist/web3.js"></script>
     <script src="/bower_components/web3/dist/web3.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
