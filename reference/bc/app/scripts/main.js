@@ -1,31 +1,5 @@
 /**
- * web3JS Sample DAPP by http://acloudfan.com
- * Version: 102     May 20th, 2017
- * 
- * Application developed as part of the course on Ethereum Blockchain
- * All Rights Reserved - Please do not share. 
- * Updated versions of the code is available on the link below:
- * APP will be updated time to time so please check back
- * 
- * http://www.acloudfan.com
- * 
- * This DAPP is available on the following link .... to use it you would need MetaMask
- * http://TheDapps.com
- * 
- * Geth
- * =====
- * Application developed against Geth/ROPSTEN
- * 
- * TestRPC
- * =======
- * Some API NOT Supported in TestRPC
- * Etherscan.io links will not be supported for TestRPC
- * 
- * META MASK
- * =========
- * MetaMask will work - except some for some functions coded SYNCHRONOUSLY
- * You may change it to work with MetaMask
- * 
+ 
  */
 
 
