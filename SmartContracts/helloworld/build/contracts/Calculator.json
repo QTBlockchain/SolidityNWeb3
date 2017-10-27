@@ -1,0 +1,86 @@
+{
+  "contract_name": "Calculator",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "name": "addToNumber",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "name": "substractNumber",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "name": "multiplyWithNumber",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getResult",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "name": "divideByNumber",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052600a600055341561001157fe5b5b5b5b610121806100236000396000f300606060405263ffffffff60e060020a60003504166306ccd230811460485780630b7e4e7f14605a578063b4679b0614606c578063de29278914607e578063f5cb911d14609d575bfe5b3415604f57fe5b605860043560af565b005b3415606157fe5b605860043560bb565b005b3415607357fe5b605860043560c8565b005b3415608557fe5b608b60d4565b60408051918252519081900360200190f35b341560a457fe5b605860043560db565b005b60008054820190555b50565b6000805482900390555b50565b60008054820290555b50565b6000545b90565b806000600082825481151560eb57fe5b0490915550505b505600a165627a7a723058204190623889c3d907141dbaa3d994656fc80c5526acbd239cd6c62869c83c31320029",
+  "networks": {
+    "1508320697413": {
+      "events": {},
+      "links": {},
+      "address": "0x98f30744fcd2636ead5cbe70f203f46640453fae",
+      "updated_at": 1508321409108
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1508322278890
+}

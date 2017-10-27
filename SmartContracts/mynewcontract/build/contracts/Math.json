@@ -1,0 +1,58 @@
+{
+  "contract_name": "Math",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int256"
+        }
+      ],
+      "name": "addToResult",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int256"
+        }
+      ],
+      "name": "mulToResult",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getResult",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b6040516020806100f683398101604052515b60008190555b505b60c2806100346000396000f300606060405263ffffffff60e060020a6000350416633b4664f0811460345780638abe789b146046578063de292789146058575bfe5b3415603b57fe5b60446004356077565b005b3415604d57fe5b60446004356083565b005b3415605f57fe5b6065608f565b60408051918252519081900360200190f35b60008054820190555b50565b60008054820290555b50565b6000545b905600a165627a7a723058201cb8c207f8049fa56e9e154c671cb89b06e38e439b9b509d063671f41ebd4ebe0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1509013633991
+}
