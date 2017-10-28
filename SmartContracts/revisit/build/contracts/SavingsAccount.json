@@ -1,0 +1,14 @@
+{
+  "contract_name": "SavingsAccount",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x60606040523415600e57600080fd5b5b5b5b603680601e6000396000f30060606040525b600080fd00a165627a7a723058205159b4e39ec2bfa532e0a194ffec74da3d2d5e96a20f28fdf28af6d78a725b7e0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1509171128844
+}
