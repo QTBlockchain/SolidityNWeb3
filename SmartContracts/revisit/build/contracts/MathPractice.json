@@ -1,0 +1,53 @@
+{
+  "contract_name": "MathPractice",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int256"
+        }
+      ],
+      "name": "addToResult",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getResult",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b5b5b60bf806100206000396000f300606060405263ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633b4664f081146046578063de29278914605b575b600080fd5b3415605057600080fd5b6059600435607d565b005b3415606557600080fd5b606b608c565b60405190815260200160405180910390f35b600080548201908190555b5050565b6000545b905600a165627a7a7230582016f6a293d561b320c217c3436c684b0165fee01ca57b7b074abdc40a616ed6490029",
+  "networks": {
+    "1509168461464": {
+      "events": {},
+      "links": {},
+      "address": "0x9b68c6b35ac1ced00a79462d9a31d4e7935adde0",
+      "updated_at": 1509169609690
+    },
+    "1509247672828": {
+      "events": {},
+      "links": {},
+      "address": "0x57954cc8e68008cda8aab67f438a5840e0db77a1",
+      "updated_at": 1509252752927
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1509252752927
+}

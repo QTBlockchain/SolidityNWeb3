@@ -1,0 +1,60 @@
+{
+  "contract_name": "SavingsAccount",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "int256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "int256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b5b5b60f2806100206000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166312065fe0811460505780637e62eab8146072578063f04991f0146087575b600080fd5b3415605a57600080fd5b6060609c565b60405190815260200160405180910390f35b3415607c57600080fd5b608560043560a3565b005b3415609157600080fd5b608560043560ba565b005b6000545b90565b600054811260ad57fe5b6000805482900390555b50565b60008054820190555b505600a165627a7a72305820127d6088923f553448bc58d2b09cb80b42f2be6a5e8993f0f99674e239925a9d0029",
+  "networks": {
+    "1509247672828": {
+      "events": {},
+      "links": {},
+      "address": "0xede14ffee5ffdd61ecda2825eedb92a6371f2b6b",
+      "updated_at": 1509252752927
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1509252752927
+}
