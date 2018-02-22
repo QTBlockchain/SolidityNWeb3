@@ -1,0 +1,330 @@
+{
+  "contractName": "Arthimetic",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "x",
+          "type": "uint256"
+        },
+        {
+          "name": "y",
+          "type": "uint256"
+        }
+      ],
+      "name": "add",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b60ba8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063771602f7146044575b600080fd5b3415604e57600080fd5b606b60048080359060200190919080359060200190919050506081565b6040518082815260200191505060405180910390f35b60008183019050929150505600a165627a7a72305820a0bde9a5b42a6ed8f9208a92239d0ab98e69f32b0aef1d2203b511d8d43e3a0f0029",
+  "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063771602f7146044575b600080fd5b3415604e57600080fd5b606b60048080359060200190919080359060200190919050506081565b6040518082815260200191505060405180910390f35b60008183019050929150505600a165627a7a72305820a0bde9a5b42a6ed8f9208a92239d0ab98e69f32b0aef1d2203b511d8d43e3a0f0029",
+  "sourceMap": "25:159:0:-;;;49:53;;;;;;;;25:159;;;;;;",
+  "deployedSourceMap": "25:159:0:-;;;;;;;;;;;;;;;;;;;;;;;;106:76;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;155:4;176:1;174;:3;167:10;;106:76;;;;:::o",
+  "source": "pragma solidity ^0.4.4;\n\ncontract Arthimetic {\n  function Arthimetic() public {\n    // constructor\n  }\n\n  function add(uint x,uint y) public pure returns (uint) {\n    return x+y;\n  }\n}\n",
+  "sourcePath": "C:\\Training\\BlockChain\\SolidityNWeb3\\SmartContracts\\calculator\\contracts\\Arthimetic.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/C/Training/BlockChain/SolidityNWeb3/SmartContracts/calculator/contracts/Arthimetic.sol",
+      "exportedSymbols": {
+        "Arthimetic": [
+          20
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".4"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            20
+          ],
+          "name": "Arthimetic",
+          "scope": 21
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "Arthimetic",
+              "payable": false,
+              "scope": 20,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2,
+                "name": "ParameterList",
+                "src": "68:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3,
+                "name": "ParameterList",
+                "src": "78:0:0"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4,
+                "name": "Block",
+                "src": "78:24:0"
+              }
+            ],
+            "id": 5,
+            "name": "FunctionDefinition",
+            "src": "49:53:0"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "add",
+              "payable": false,
+              "scope": 20,
+              "stateMutability": "pure",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "x",
+                      "scope": 19,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 6,
+                        "name": "ElementaryTypeName",
+                        "src": "119:4:0"
+                      }
+                    ],
+                    "id": 7,
+                    "name": "VariableDeclaration",
+                    "src": "119:6:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "y",
+                      "scope": 19,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 8,
+                        "name": "ElementaryTypeName",
+                        "src": "126:4:0"
+                      }
+                    ],
+                    "id": 9,
+                    "name": "VariableDeclaration",
+                    "src": "126:6:0"
+                  }
+                ],
+                "id": 10,
+                "name": "ParameterList",
+                "src": "118:15:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 19,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 11,
+                        "name": "ElementaryTypeName",
+                        "src": "155:4:0"
+                      }
+                    ],
+                    "id": 12,
+                    "name": "VariableDeclaration",
+                    "src": "155:4:0"
+                  }
+                ],
+                "id": 13,
+                "name": "ParameterList",
+                "src": "154:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 13
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "+",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 7,
+                              "type": "uint256",
+                              "value": "x"
+                            },
+                            "id": 14,
+                            "name": "Identifier",
+                            "src": "174:1:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 9,
+                              "type": "uint256",
+                              "value": "y"
+                            },
+                            "id": 15,
+                            "name": "Identifier",
+                            "src": "176:1:0"
+                          }
+                        ],
+                        "id": 16,
+                        "name": "BinaryOperation",
+                        "src": "174:3:0"
+                      }
+                    ],
+                    "id": 17,
+                    "name": "Return",
+                    "src": "167:10:0"
+                  }
+                ],
+                "id": 18,
+                "name": "Block",
+                "src": "161:21:0"
+              }
+            ],
+            "id": 19,
+            "name": "FunctionDefinition",
+            "src": "106:76:0"
+          }
+        ],
+        "id": 20,
+        "name": "ContractDefinition",
+        "src": "25:159:0"
+      }
+    ],
+    "id": 21,
+    "name": "SourceUnit",
+    "src": "0:185:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-02-22T11:45:52.115Z"
+}
