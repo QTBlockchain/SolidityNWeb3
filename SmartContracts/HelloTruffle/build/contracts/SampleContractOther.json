@@ -1,0 +1,129 @@
+{
+  "contractName": "SampleContractOther",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a723058206c5598fae6f17a593b76819aeb7e8edbad08440a885c23c3780b6c209b2814e40029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a723058206c5598fae6f17a593b76819aeb7e8edbad08440a885c23c3780b6c209b2814e40029",
+  "sourceMap": "25:90:2:-;;;58:55;;;;;;;;25:90;;;;;;",
+  "deployedSourceMap": "25:90:2:-;;;;;",
+  "source": "pragma solidity ^0.4.4;\n\ncontract SampleContractOther {\n  function SampleContractOther() {\n    // constructor\n  }\n}\n",
+  "sourcePath": "C:\\ClassRoom\\BlockChain\\SolidityNWeb3\\SmartContracts\\HelloTruffle\\contracts\\SampleContractOther.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/C/ClassRoom/BlockChain/SolidityNWeb3/SmartContracts/HelloTruffle/contracts/SampleContractOther.sol",
+      "exportedSymbols": {
+        "SampleContractOther": [
+          70
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".4"
+          ]
+        },
+        "id": 65,
+        "name": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            70
+          ],
+          "name": "SampleContractOther",
+          "scope": 71
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "SampleContractOther",
+              "payable": false,
+              "scope": 70,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 66,
+                "name": "ParameterList",
+                "src": "86:2:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 67,
+                "name": "ParameterList",
+                "src": "89:0:2"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 68,
+                "name": "Block",
+                "src": "89:24:2"
+              }
+            ],
+            "id": 69,
+            "name": "FunctionDefinition",
+            "src": "58:55:2"
+          }
+        ],
+        "id": 70,
+        "name": "ContractDefinition",
+        "src": "25:90:2"
+      }
+    ],
+    "id": 71,
+    "name": "SourceUnit",
+    "src": "0:116:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-02-24T03:17:28.657Z"
+}
