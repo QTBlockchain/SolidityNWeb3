@@ -1,0 +1,129 @@
+{
+  "contractName": "IncomeTaxCalc",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a72305820573a5cb894f4bfd509bf2d733ead20b3cff1f33af2d3292d466dea51054c21cb0029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a72305820573a5cb894f4bfd509bf2d733ead20b3cff1f33af2d3292d466dea51054c21cb0029",
+  "sourceMap": "25:78:1:-;;;52:49;;;;;;;;25:78;;;;;;",
+  "deployedSourceMap": "25:78:1:-;;;;;",
+  "source": "pragma solidity ^0.4.4;\n\ncontract IncomeTaxCalc {\n  function IncomeTaxCalc() {\n    // constructor\n  }\n}\n",
+  "sourcePath": "E:\\Blockchain\\SolidityNWeb3\\SmartContracts\\myfirstsample\\contracts\\IncomeTaxCalc.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/E/Blockchain/SolidityNWeb3/SmartContracts/myfirstsample/contracts/IncomeTaxCalc.sol",
+      "exportedSymbols": {
+        "IncomeTaxCalc": [
+          13
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".4"
+          ]
+        },
+        "id": 8,
+        "name": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            13
+          ],
+          "name": "IncomeTaxCalc",
+          "scope": 14
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "IncomeTaxCalc",
+              "payable": false,
+              "scope": 13,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 9,
+                "name": "ParameterList",
+                "src": "74:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10,
+                "name": "ParameterList",
+                "src": "77:0:1"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 11,
+                "name": "Block",
+                "src": "77:24:1"
+              }
+            ],
+            "id": 12,
+            "name": "FunctionDefinition",
+            "src": "52:49:1"
+          }
+        ],
+        "id": 13,
+        "name": "ContractDefinition",
+        "src": "25:78:1"
+      }
+    ],
+    "id": 14,
+    "name": "SourceUnit",
+    "src": "0:104:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-02-23T01:34:13.059Z"
+}

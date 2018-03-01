@@ -12,6 +12,7 @@ contract UpdateSavingsBank {
     balances.push(balance);
     accountNumber = names.length-1;
   }
+
   function DepositAmount(uint256 accountNumber, uint16 amount) {
     balances[accountNumber] += amount;
   }
@@ -24,6 +25,4 @@ contract UpdateSavingsBank {
     name = names[accountNumber];
     balance = balances[accountNumber];
   }
-
-
 }
