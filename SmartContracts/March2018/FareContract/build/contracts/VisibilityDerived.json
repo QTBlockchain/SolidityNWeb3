@@ -1,0 +1,288 @@
+{
+  "contractName": "VisibilityDerived",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "IsThisExternal",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "IsThisPublic",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "test",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b60c88061001d6000396000f3006060604052600436106053576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806357c508d3146058578063b261ce9c14606a578063f8a8fd6d14607c575b600080fd5b3415606257600080fd5b6068608e565b005b3415607457600080fd5b607a6090565b005b3415608657600080fd5b608c6092565b005b565b565b6098609a565b565b5600a165627a7a7230582076dfe573116dd449f2c26c2c81f33ec1cfbe777fc0eae0519d2471b6f7f413f70029",
+  "deployedBytecode": "0x6060604052600436106053576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806357c508d3146058578063b261ce9c14606a578063f8a8fd6d14607c575b600080fd5b3415606257600080fd5b6068608e565b005b3415607457600080fd5b607a6090565b005b3415608657600080fd5b608c6092565b005b565b565b6098609a565b565b5600a165627a7a7230582076dfe573116dd449f2c26c2c81f33ec1cfbe777fc0eae0519d2471b6f7f413f70029",
+  "sourceMap": "57:151:4:-;;;106:53;;;;;;;;57:151;;;;;;",
+  "deployedSourceMap": "57:151:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;228:45:3;;;;;;;;;;;;;;114:41;;;;;;;;;;;;;;163:43:4;;;;;;;;;;;;;;228:45:3;:::o;114:41::-;:::o;163:43:4:-;185:16;:14;:16::i;:::-;163:43::o;277:45:3:-;:::o",
+  "source": "pragma solidity ^0.4.4;\n\nimport \"./VisibilityDemo.sol\";\n\ncontract VisibilityDerived is VisibilityDemo {\n  function VisibilityDerived() {\n    // constructor\n  }\n\n  function test() {\n    IsThisInternal();\n  }\n}\n",
+  "sourcePath": "E:\\Blockchain\\SolidityNWeb3\\SmartContracts\\March2018\\FareContract\\contracts\\VisibilityDerived.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/E/Blockchain/SolidityNWeb3/SmartContracts/March2018/FareContract/contracts/VisibilityDerived.sol",
+      "exportedSymbols": {
+        "VisibilityDerived": [
+          125
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".4"
+          ]
+        },
+        "id": 110,
+        "name": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 109,
+          "absolutePath": "/E/Blockchain/SolidityNWeb3/SmartContracts/March2018/FareContract/contracts/VisibilityDemo.sol",
+          "file": "./VisibilityDemo.sol",
+          "scope": 126,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 111,
+        "name": "ImportDirective",
+        "src": "25:30:4"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            108
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            125,
+            108
+          ],
+          "name": "VisibilityDerived",
+          "scope": 126
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "VisibilityDemo",
+                  "referencedDeclaration": 108,
+                  "type": "contract VisibilityDemo"
+                },
+                "id": 112,
+                "name": "UserDefinedTypeName",
+                "src": "87:14:4"
+              }
+            ],
+            "id": 113,
+            "name": "InheritanceSpecifier",
+            "src": "87:14:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "VisibilityDerived",
+              "payable": false,
+              "scope": 125,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 114,
+                "name": "ParameterList",
+                "src": "132:2:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 115,
+                "name": "ParameterList",
+                "src": "135:0:4"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 116,
+                "name": "Block",
+                "src": "135:24:4"
+              }
+            ],
+            "id": 117,
+            "name": "FunctionDefinition",
+            "src": "106:53:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "test",
+              "payable": false,
+              "scope": 125,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 118,
+                "name": "ParameterList",
+                "src": "176:2:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 119,
+                "name": "ParameterList",
+                "src": "179:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 107,
+                              "type": "function ()",
+                              "value": "IsThisInternal"
+                            },
+                            "id": 120,
+                            "name": "Identifier",
+                            "src": "185:14:4"
+                          }
+                        ],
+                        "id": 121,
+                        "name": "FunctionCall",
+                        "src": "185:16:4"
+                      }
+                    ],
+                    "id": 122,
+                    "name": "ExpressionStatement",
+                    "src": "185:16:4"
+                  }
+                ],
+                "id": 123,
+                "name": "Block",
+                "src": "179:27:4"
+              }
+            ],
+            "id": 124,
+            "name": "FunctionDefinition",
+            "src": "163:43:4"
+          }
+        ],
+        "id": 125,
+        "name": "ContractDefinition",
+        "src": "57:151:4"
+      }
+    ],
+    "id": 126,
+    "name": "SourceUnit",
+    "src": "0:209:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-03-04T03:55:45.926Z"
+}

@@ -1,0 +1,466 @@
+{
+  "contractName": "BaseFareCalculator",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "string"
+        },
+        {
+          "name": "destination",
+          "type": "string"
+        }
+      ],
+      "name": "calculateFare",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "location",
+          "type": "string"
+        }
+      ],
+      "name": "AddLocation",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.4;\n\ncontract BaseFareCalculator {\n  function BaseFareCalculator() {\n    // constructor\n  }\n\n  string[] locations;\n\n  function calculateFare(string source,string destination) returns (uint256);\n\n  function AddLocation(string location) {\n    locations.push(location);\n  }\n}\n",
+  "sourcePath": "E:\\Blockchain\\SolidityNWeb3\\SmartContracts\\March2018\\FareContract\\contracts\\BaseFareCalculator.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/E/Blockchain/SolidityNWeb3/SmartContracts/March2018/FareContract/contracts/BaseFareCalculator.sol",
+      "exportedSymbols": {
+        "BaseFareCalculator": [
+          59
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".4"
+          ]
+        },
+        "id": 30,
+        "name": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            59
+          ],
+          "name": "BaseFareCalculator",
+          "scope": 60
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "BaseFareCalculator",
+              "payable": false,
+              "scope": 59,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 31,
+                "name": "ParameterList",
+                "src": "84:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 32,
+                "name": "ParameterList",
+                "src": "87:0:1"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 33,
+                "name": "Block",
+                "src": "87:24:1"
+              }
+            ],
+            "id": 34,
+            "name": "FunctionDefinition",
+            "src": "57:54:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "locations",
+              "scope": 59,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string storage ref[] storage ref",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "string storage ref[] storage pointer"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string storage pointer"
+                    },
+                    "id": 35,
+                    "name": "ElementaryTypeName",
+                    "src": "115:6:1"
+                  }
+                ],
+                "id": 36,
+                "name": "ArrayTypeName",
+                "src": "115:8:1"
+              }
+            ],
+            "id": 37,
+            "name": "VariableDeclaration",
+            "src": "115:18:1"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "calculateFare",
+              "payable": false,
+              "scope": 59,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "source",
+                      "scope": 46,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 38,
+                        "name": "ElementaryTypeName",
+                        "src": "161:6:1"
+                      }
+                    ],
+                    "id": 39,
+                    "name": "VariableDeclaration",
+                    "src": "161:13:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "destination",
+                      "scope": 46,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 40,
+                        "name": "ElementaryTypeName",
+                        "src": "175:6:1"
+                      }
+                    ],
+                    "id": 41,
+                    "name": "VariableDeclaration",
+                    "src": "175:18:1"
+                  }
+                ],
+                "id": 42,
+                "name": "ParameterList",
+                "src": "160:34:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 46,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 43,
+                        "name": "ElementaryTypeName",
+                        "src": "204:7:1"
+                      }
+                    ],
+                    "id": 44,
+                    "name": "VariableDeclaration",
+                    "src": "204:7:1"
+                  }
+                ],
+                "id": 45,
+                "name": "ParameterList",
+                "src": "203:9:1"
+              }
+            ],
+            "id": 46,
+            "name": "FunctionDefinition",
+            "src": "138:75:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "AddLocation",
+              "payable": false,
+              "scope": 59,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "location",
+                      "scope": 58,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 47,
+                        "name": "ElementaryTypeName",
+                        "src": "238:6:1"
+                      }
+                    ],
+                    "id": 48,
+                    "name": "VariableDeclaration",
+                    "src": "238:15:1"
+                  }
+                ],
+                "id": 49,
+                "name": "ParameterList",
+                "src": "237:17:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 50,
+                "name": "ParameterList",
+                "src": "255:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_string_memory_ptr",
+                                  "typeString": "string memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (string storage ref) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 37,
+                                  "type": "string storage ref[] storage ref",
+                                  "value": "locations"
+                                },
+                                "id": 51,
+                                "name": "Identifier",
+                                "src": "261:9:1"
+                              }
+                            ],
+                            "id": 53,
+                            "name": "MemberAccess",
+                            "src": "261:14:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 48,
+                              "type": "string memory",
+                              "value": "location"
+                            },
+                            "id": 54,
+                            "name": "Identifier",
+                            "src": "276:8:1"
+                          }
+                        ],
+                        "id": 55,
+                        "name": "FunctionCall",
+                        "src": "261:24:1"
+                      }
+                    ],
+                    "id": 56,
+                    "name": "ExpressionStatement",
+                    "src": "261:24:1"
+                  }
+                ],
+                "id": 57,
+                "name": "Block",
+                "src": "255:35:1"
+              }
+            ],
+            "id": 58,
+            "name": "FunctionDefinition",
+            "src": "217:73:1"
+          }
+        ],
+        "id": 59,
+        "name": "ContractDefinition",
+        "src": "25:267:1"
+      }
+    ],
+    "id": 60,
+    "name": "SourceUnit",
+    "src": "0:293:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-03-04T03:55:45.928Z"
+}

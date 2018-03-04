@@ -7,6 +7,7 @@ contract AaadharDemo {
 
   mapping (string=>Details) aadharDetails;
 
+
   struct Details {
     string name;
     string mobileNo;
@@ -20,6 +21,7 @@ contract AaadharDemo {
     string mobileNumber,
     string addharNo) {
     aadharDetails[addharNo] = Details(name,mobileNumber);
+    
   }
 
   

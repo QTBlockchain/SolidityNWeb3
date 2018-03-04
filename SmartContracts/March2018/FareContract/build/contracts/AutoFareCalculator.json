@@ -1,0 +1,457 @@
+{
+  "contractName": "AutoFareCalculator",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "discount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "location",
+          "type": "string"
+        }
+      ],
+      "name": "AddLocation",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "string"
+        },
+        {
+          "name": "destination",
+          "type": "string"
+        }
+      ],
+      "name": "calculateFare",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6101da8061001e6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633f32af651461005c5780636b6f4a9d14610110578063b5fd76bb14610139575b600080fd5b341561006757600080fd5b6100fa600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610196565b6040518082815260200191505060405180910390f35b341561011b57600080fd5b6101236101a2565b6040518082815260200191505060405180910390f35b341561014457600080fd5b610194600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506101ab565b005b600060fa905092915050565b6000600a905090565b505600a165627a7a72305820cc77300751f4da60aca4cbd303aa9be99ebb2032c935743be226dc5849dcf1660029",
+  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633f32af651461005c5780636b6f4a9d14610110578063b5fd76bb14610139575b600080fd5b341561006757600080fd5b6100fa600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610196565b6040518082815260200191505060405180910390f35b341561011b57600080fd5b6101236101a2565b6040518082815260200191505060405180910390f35b341561014457600080fd5b610194600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506101ab565b005b600060fa905092915050565b6000600a905090565b505600a165627a7a72305820cc77300751f4da60aca4cbd303aa9be99ebb2032c935743be226dc5849dcf1660029",
+  "sourceMap": "84:263:0:-;;;148:54;;;;;;;;84:263;;;;;;",
+  "deployedSourceMap": "84:263:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;206:102;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;95:55:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;154:48;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;206:102:0;279:7;300:3;293:10;;206:102;;;;:::o;95:55:2:-;124:4;143:2;136:9;;95:55;:::o;154:48::-;;:::o",
+  "source": "pragma solidity ^0.4.4;\nimport \"./BaseFareCalculator.sol\";\nimport \"./Discount.sol\";\ncontract AutoFareCalculator is BaseFareCalculator, Discount {\n  function AutoFareCalculator() {\n    // constructor\n  }\n\n  function calculateFare(string source,string destination) public returns (uint256){\n    return 250;\n  }\n\n  function secret() private {\n\n  }\n\n}\n",
+  "sourcePath": "E:\\Blockchain\\SolidityNWeb3\\SmartContracts\\March2018\\FareContract\\contracts\\AutoFareCalculator.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/E/Blockchain/SolidityNWeb3/SmartContracts/March2018/FareContract/contracts/AutoFareCalculator.sol",
+      "exportedSymbols": {
+        "AutoFareCalculator": [
+          28
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".4"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 60,
+          "absolutePath": "/E/Blockchain/SolidityNWeb3/SmartContracts/March2018/FareContract/contracts/BaseFareCalculator.sol",
+          "file": "./BaseFareCalculator.sol",
+          "scope": 29,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2,
+        "name": "ImportDirective",
+        "src": "24:34:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 81,
+          "absolutePath": "/E/Blockchain/SolidityNWeb3/SmartContracts/March2018/FareContract/contracts/Discount.sol",
+          "file": "./Discount.sol",
+          "scope": 29,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 3,
+        "name": "ImportDirective",
+        "src": "59:24:0"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            59,
+            80
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            28,
+            80,
+            59
+          ],
+          "name": "AutoFareCalculator",
+          "scope": 29
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "BaseFareCalculator",
+                  "referencedDeclaration": 59,
+                  "type": "contract BaseFareCalculator"
+                },
+                "id": 4,
+                "name": "UserDefinedTypeName",
+                "src": "115:18:0"
+              }
+            ],
+            "id": 5,
+            "name": "InheritanceSpecifier",
+            "src": "115:18:0"
+          },
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Discount",
+                  "referencedDeclaration": 80,
+                  "type": "contract Discount"
+                },
+                "id": 6,
+                "name": "UserDefinedTypeName",
+                "src": "135:8:0"
+              }
+            ],
+            "id": 7,
+            "name": "InheritanceSpecifier",
+            "src": "135:8:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "AutoFareCalculator",
+              "payable": false,
+              "scope": 28,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 8,
+                "name": "ParameterList",
+                "src": "175:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 9,
+                "name": "ParameterList",
+                "src": "178:0:0"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10,
+                "name": "Block",
+                "src": "178:24:0"
+              }
+            ],
+            "id": 11,
+            "name": "FunctionDefinition",
+            "src": "148:54:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "calculateFare",
+              "payable": false,
+              "scope": 28,
+              "stateMutability": "nonpayable",
+              "superFunction": 46,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "source",
+                      "scope": 23,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 12,
+                        "name": "ElementaryTypeName",
+                        "src": "229:6:0"
+                      }
+                    ],
+                    "id": 13,
+                    "name": "VariableDeclaration",
+                    "src": "229:13:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "destination",
+                      "scope": 23,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 14,
+                        "name": "ElementaryTypeName",
+                        "src": "243:6:0"
+                      }
+                    ],
+                    "id": 15,
+                    "name": "VariableDeclaration",
+                    "src": "243:18:0"
+                  }
+                ],
+                "id": 16,
+                "name": "ParameterList",
+                "src": "228:34:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 23,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 17,
+                        "name": "ElementaryTypeName",
+                        "src": "279:7:0"
+                      }
+                    ],
+                    "id": 18,
+                    "name": "VariableDeclaration",
+                    "src": "279:7:0"
+                  }
+                ],
+                "id": 19,
+                "name": "ParameterList",
+                "src": "278:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 19
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "323530",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "number",
+                          "type": "int_const 250",
+                          "value": "250"
+                        },
+                        "id": 20,
+                        "name": "Literal",
+                        "src": "300:3:0"
+                      }
+                    ],
+                    "id": 21,
+                    "name": "Return",
+                    "src": "293:10:0"
+                  }
+                ],
+                "id": 22,
+                "name": "Block",
+                "src": "287:21:0"
+              }
+            ],
+            "id": 23,
+            "name": "FunctionDefinition",
+            "src": "206:102:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "secret",
+              "payable": false,
+              "scope": 28,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 24,
+                "name": "ParameterList",
+                "src": "327:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 25,
+                "name": "ParameterList",
+                "src": "338:0:0"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 26,
+                "name": "Block",
+                "src": "338:6:0"
+              }
+            ],
+            "id": 27,
+            "name": "FunctionDefinition",
+            "src": "312:32:0"
+          }
+        ],
+        "id": 28,
+        "name": "ContractDefinition",
+        "src": "84:263:0"
+      }
+    ],
+    "id": 29,
+    "name": "SourceUnit",
+    "src": "0:348:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-03-04T03:55:45.927Z"
+}
