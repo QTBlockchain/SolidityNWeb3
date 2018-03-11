@@ -24,10 +24,11 @@ contract VehicleRTO is Ownership {
     year = vehicleDetails.year;
   }
 
-  function registerVehicle(string registrationNo,string make,uint8 year,address owner) public onlyRTO {
-    //var vehicleDetails = // create struct over here
+  function registerVehicle(string registrationNo,string make,uint8 year,address owner)
+    public onlyRTO 
+  {
+    var vehicleDetails = Vehicle(registrationNo,make,year);
+    registrationMap[owner] = vehicleDetails;
     //fill the map with structure
   }
-
-  
 }
