@@ -1,0 +1,332 @@
+{
+  "contractName": "Discount",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "discount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "location",
+          "type": "string"
+        }
+      ],
+      "name": "AddLocation",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6101068061001e6000396000f3006060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636b6f4a9d14604e578063b5fd76bb146074575b600080fd5b3415605857600080fd5b605e60ce565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b60cc600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190505060d7565b005b6000600a905090565b505600a165627a7a72305820c332a00bf59c4f6ccb892e386be0606fe0404313dadc5a5f2c3cbf35f17173890029",
+  "deployedBytecode": "0x6060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636b6f4a9d14604e578063b5fd76bb146074575b600080fd5b3415605857600080fd5b605e60ce565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b60cc600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190505060d7565b005b6000600a905090565b505600a165627a7a72305820c332a00bf59c4f6ccb892e386be0606fe0404313dadc5a5f2c3cbf35f17173890029",
+  "sourceMap": "25:179:2:-;;;47:44;;;;;;;;25:179;;;;;;",
+  "deployedSourceMap": "25:179:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;95:55;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;154:48;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;95:55;124:4;143:2;136:9;;95:55;:::o;154:48::-;;:::o",
+  "source": "pragma solidity ^0.4.4;\n\ncontract Discount {\n  function Discount() {\n    // constructor\n  }\n\n  function discount() returns (uint) {\n    return 10;\n  }\n\n  function AddLocation(string location) {\n    \n  }\n}\n",
+  "sourcePath": "E:\\Blockchain\\SolidityNWeb3\\SmartContracts\\March2018\\FareContract\\contracts\\Discount.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/E/Blockchain/SolidityNWeb3/SmartContracts/March2018/FareContract/contracts/Discount.sol",
+      "exportedSymbols": {
+        "Discount": [
+          80
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".4"
+          ]
+        },
+        "id": 61,
+        "name": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            80
+          ],
+          "name": "Discount",
+          "scope": 81
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "Discount",
+              "payable": false,
+              "scope": 80,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 62,
+                "name": "ParameterList",
+                "src": "64:2:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 63,
+                "name": "ParameterList",
+                "src": "67:0:2"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 64,
+                "name": "Block",
+                "src": "67:24:2"
+              }
+            ],
+            "id": 65,
+            "name": "FunctionDefinition",
+            "src": "47:44:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "discount",
+              "payable": false,
+              "scope": 80,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 66,
+                "name": "ParameterList",
+                "src": "112:2:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 73,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 67,
+                        "name": "ElementaryTypeName",
+                        "src": "124:4:2"
+                      }
+                    ],
+                    "id": 68,
+                    "name": "VariableDeclaration",
+                    "src": "124:4:2"
+                  }
+                ],
+                "id": 69,
+                "name": "ParameterList",
+                "src": "123:6:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 69
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "3130",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "number",
+                          "type": "int_const 10",
+                          "value": "10"
+                        },
+                        "id": 70,
+                        "name": "Literal",
+                        "src": "143:2:2"
+                      }
+                    ],
+                    "id": 71,
+                    "name": "Return",
+                    "src": "136:9:2"
+                  }
+                ],
+                "id": 72,
+                "name": "Block",
+                "src": "130:20:2"
+              }
+            ],
+            "id": 73,
+            "name": "FunctionDefinition",
+            "src": "95:55:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "AddLocation",
+              "payable": false,
+              "scope": 80,
+              "stateMutability": "nonpayable",
+              "superFunction": 58,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "location",
+                      "scope": 79,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 74,
+                        "name": "ElementaryTypeName",
+                        "src": "175:6:2"
+                      }
+                    ],
+                    "id": 75,
+                    "name": "VariableDeclaration",
+                    "src": "175:15:2"
+                  }
+                ],
+                "id": 76,
+                "name": "ParameterList",
+                "src": "174:17:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 77,
+                "name": "ParameterList",
+                "src": "192:0:2"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 78,
+                "name": "Block",
+                "src": "192:10:2"
+              }
+            ],
+            "id": 79,
+            "name": "FunctionDefinition",
+            "src": "154:48:2"
+          }
+        ],
+        "id": 80,
+        "name": "ContractDefinition",
+        "src": "25:179:2"
+      }
+    ],
+    "id": 81,
+    "name": "SourceUnit",
+    "src": "0:205:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-03-04T03:55:45.925Z"
+}
