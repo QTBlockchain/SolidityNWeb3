@@ -15,4 +15,17 @@ contract('MathUtil', function(accounts) {
         done();
       });
   });
+
+  // square of 0 should be 0
+
+   it("should return square of zero as zero", function (done){
+     MathUtil.deployed().then(function (mathUtil) {
+       return mathUtil.square(-2);
+     }).then(function (result) {
+        var valueReturned = result.valueOf();
+        console.log("value returned is "+ valueReturned);
+        assert.equal(valueReturned, 0, "The square of zero should be zero");
+        done();
+     });
+   } );
 });
