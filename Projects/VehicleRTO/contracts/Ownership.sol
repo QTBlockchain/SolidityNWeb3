@@ -36,6 +36,4 @@ contract Ownership {
   function changeOwner(address newOwner) public onlyRTO {
     owner = newOwner;
   }
-
-
 }
