@@ -103,12 +103,12 @@ body {
 }
 
 .logo {
-  content: url('http://thedapps.com/images/thedappslogo1.png');
+  
   
   max-width: 80%;                    
 }
 .workbench {
-  content: url('../images/ethereum-workbench.png');
+  
   
   max-width: 100%;                    
 }
