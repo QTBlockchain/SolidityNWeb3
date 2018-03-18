@@ -2,8 +2,7 @@ pragma solidity ^0.4.4;
 
 /**
  * Implements the registry for address => name mapping
- * This registry pattern contract is used by thedapps.com for personalizing the user experience
- * 
+ *  * 
  * Pattern: Mapping Iteration
  **/
 
